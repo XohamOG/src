@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * Beginning comments:
  * Filename: Main.java
- * @author:  Richard Joseph
+ * @author:  soham patil
  * Overview: This is the main class used to create objects for Client Class, Records class; Menu Driven Program. In this file we have achieved the following
  * - Object Creation
  * - Calling Setters and Getters
@@ -48,7 +48,7 @@ public class Main {
             System.out.println("2 - Edit client");
             System.out.println("3 - Delete client");
             System.out.println("4 - Display clients");
-            System.out.println("5 - Enter record");
+            System.out.println("5 - Enter record ");
             System.out.println("6 - Exit");
             System.out.print("Enter Choice of Operation : ");
 
