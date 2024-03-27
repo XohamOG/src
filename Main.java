@@ -1,4 +1,6 @@
 import Model.Clients.*;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -56,34 +58,42 @@ public class Main {
             ch = sc.nextInt();
 
             if (ch == 1) {
-                for (int i = 0; i < clientArr.length; i++) {
-                    sc.nextLine();
-
-                    System.out.println("Enter no. of clients to be entered:");
-                     
-                     //Creating a Scanner Object to take input
-                     Scanner sc1 = new Scanner(System.in);
-                     n = sc1.nextInt();
-
-                     for (i=1; i<=n; i++)
-                     {
-
-                    System.out.println("Enter Client Name: ");
-                    String name = sc.nextLine();
-
-                    System.out.println("Enter Client Age: ");
-                    int age = sc.nextInt();
-                    sc.nextLine();
-
-                    System.out.println("Enter Client Email: ");
-                    String email = sc.nextLine();
-
-                    System.out.println("Enter Client Gender: ");
-                    String gender = sc.nextLine();
-
-                    clientArr[i] = new Client(email, name, age, gender);
-                     }
-            }
+                
+                try {
+                    
+                
+                    for (int i = 0; i < clientArr.length; i++) {
+                        sc.nextLine();
+    
+                        System.out.println("Enter no. of clients to be entered:");
+                         
+                         //Creating a Scanner Object to take input
+                         Scanner sc1 = new Scanner(System.in);
+                         n = sc1.nextInt();
+    
+                         for (i=1; i<=n; i++)
+                        {
+    
+                        System.out.println("Enter Client Name: ");
+                        String name = sc.nextLine();
+    
+                        System.out.println("Enter Client Age: ");
+                        int age = sc.nextInt();
+                        sc.nextLine();
+    
+                        System.out.println("Enter Client Email: ");
+                        String email = sc.nextLine();
+    
+                        System.out.println("Enter Client Gender: ");
+                        String gender = sc.nextLine();
+    
+                        clientArr[i] = new Client(email, name, age, gender);
+                        } 
+                    }
+                }
+    
+                 catch (InputMismatchException e) {
+                    }
             } else if (ch == 2) {
                 // Displaying existing clients for selection
                 System.out.println("Existing Clients:");
