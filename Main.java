@@ -21,7 +21,7 @@ public class Main {
             System.out.println("4 - Display clients");
             System.out.println("5 - Enter record");
             System.out.println("6 - Display records");
-            System.out.println("7 - Exit");
+            System.out.println(" - Exit");
             System.out.print("Enter Choice of Operation: ");
 
             ch = sc.nextInt();
