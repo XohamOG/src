@@ -93,8 +93,14 @@ public class Main {
                 }
     
                  catch (InputMismatchException e) {
+                    System.out.println();
+
+                    System.out.println("Please write an valid integer input");
+                    
+                    System.out.println();
                     }
             } else if (ch == 2) {
+                
                 // Displaying existing clients for selection
                 System.out.println("Existing Clients:");
                 for (int i = 0; i < clientArr.length; i++) {
