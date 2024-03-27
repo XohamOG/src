@@ -46,6 +46,8 @@ public class Main {
 
         //Using For Loop to Take user input for each client object
         do{
+
+           
             System.out.println("1 - Add client");
             System.out.println("2 - Edit client");
             System.out.println("3 - Delete client");
@@ -100,7 +102,7 @@ public class Main {
                     System.out.println();
                     }
             } else if (ch == 2) {
-                
+
                 // Displaying existing clients for selection
                 System.out.println("Existing Clients:");
                 for (int i = 0; i < clientArr.length; i++) {
@@ -178,6 +180,9 @@ public class Main {
             } else {
                 System.out.println("Invalid input.");
             }
-        } while (true);
+
+        }
+
+         while (true);
 }
 }
