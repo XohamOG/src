@@ -1,5 +1,8 @@
 package Model.Records;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Identification comments:
  *   Name: Soham patil
@@ -70,6 +73,21 @@ public class Records implements RecordsDesc{
     public boolean getmeditation() {
         return meditation;
     }
+    @Override
+ 
+    public void display_records() {
+        List<Records> recordsList = new ArrayList<>();
+        for (Records record : recordsList) 
+
+        {
+            System.out.println("Steps: " + record.getsteps());
+            System.out.println("Sleep Hours: " + record.getsleephrs());
+            System.out.println("Water Consumed: " + record.gethydration());
+            System.out.println("Meditation: " + record.getmeditation());
+            System.out.println();
+        }
+    }
+
     public void display()
     {
         System.out.println("Client stepsstatus: "+getsteps());

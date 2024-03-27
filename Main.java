@@ -1,6 +1,6 @@
 import Model.Clients.*;
 import Model.Records.Records;
-
+import Model.Records.*;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -163,15 +163,14 @@ public class Main {
                 break;
 
                 case 6:
-                    for (Records record : recordsList) {
-                    // Print out the details of each Records object
-                    System.out.println("Steps: " + record.getsteps());
-                    System.out.println("Sleep Hours: " + record.getsleephrs());
-                    System.out.println("Water Consumed: " + record.gethydration());
-                    System.out.println("Meditation: " + record.getmeditation());
-                    System.out.println();
-                    }
-                    break;
+
+                
+
+
+
+
+                                
+                break;
                 case 7:
                     return;
                 default:
