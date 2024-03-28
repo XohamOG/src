@@ -74,7 +74,6 @@ public class Records implements RecordsDesc{
         return meditation;
     }
     @Override
- 
     public void display_records() {
         List<Records> recordsList = new ArrayList<>();
         for (Records record : recordsList) 
@@ -88,7 +87,8 @@ public class Records implements RecordsDesc{
         }
     }
 
-    public void display()
+    @Override
+    public void display_status()
     {
         System.out.println("Client stepsstatus: "+getsteps());
         System.out.println("Client sleephrs status: "+getsleephrs());
