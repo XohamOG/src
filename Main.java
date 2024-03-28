@@ -163,13 +163,7 @@ public class Main {
                 break;
 
                 case 6:
-
-                
-
-
-
-
-                                
+                Model.Records.display_records();                                           
                 break;
                 case 7:
                     return;
